@@ -1,0 +1,160 @@
+@font-face {
+    font-family: Eurostile;
+    src: url("/resource/fonts/Eurostile-Bold.ttf");
+}
+
+.border-radius(@params) {
+	border-radius: @params;
+	-moz-border-radius: @params;
+	-webkit-border-radius: @params;
+}
+
+.box-shadow(@params) {
+	box-shadow: 0px 0px @params;
+	-moz-box-shadow: 0px 0px @params;
+	-webkit-box-shadow: 0px 0px @params;
+}
+
+.background-size(@params) {
+	-webkit-background-size: @params;
+	-moz-background-size: @params;
+	-o-background-size: @params;
+	background-size: @params;
+}
+
+#slider {
+	.box-shadow(25px #003752);
+	width: 525px;
+	margin: 0 10px;
+	height: 350px;
+	display: inline-block;
+	background-color: #000;
+	position: relative;
+	
+	.slide {
+		width: 525px;
+		height: 350px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		opacity: 0;
+		filter:alpha(opacity=0);
+		cursor: pointer;
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+		
+		span {
+			.border-radius(5px);
+			display: inline-block;
+			background-image: url("/resource/img/alphablack.png");
+			color: #FFF;
+			position: absolute;
+			padding: 5px 10px;
+			
+			&:hover {
+				background-image: none;
+				background-color: #000;
+			}
+		}
+	}
+	
+	.controller {
+		position: absolute;
+		width: 35px;
+		right: -15px;
+		top: 10px;
+		z-index: 10;
+		.slide-control {
+			background-image: url("/resource/img/site/slide-inactive.png");
+			width: 36px;
+			height: 25px;
+			padding-top: 6px;
+			text-align: center;
+			color: #FFF;
+			margin: 2px;
+			cursor: pointer;
+			font-family: "Eurostile", sans-serif;
+			text-shadow: 1px 1px 1px #000;
+			background-repeat: no-repeat;
+			
+			&.active {
+				background-image: url("/resource/img/site/slide-active.png");
+			}
+			
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+#horarios {
+	.border-radius(25px);
+	.box-shadow(25px #003752);
+	width: 370px;
+	margin: 0px 10px 65px;
+	height: 185px;
+	display: inline-block;
+	background-color: #004161;
+	padding: 30px 10px;
+	color: #FFF;
+	position: relative;
+	
+	.parafuso {
+		.background-size(100%);
+		width: 15px;
+		height: 15px;
+		position: absolute;
+		background-repeat: no-repeat;
+		-webkit-filter: drop-shadow(0px 0px 20px #0072AC);
+		
+		&#top-left {
+			top: 10px;
+			left: 10px;
+			background-image: url("/resource/img/site/parafuso1.png");
+		}
+		
+		&#top-right {
+			top: 10px;
+			right: 10px;
+			background-image: url("/resource/img/site/parafuso2.png");
+		}
+		
+		&#bottom-left {
+			bottom: 10px;
+			left: 10px;
+			background-image: url("/resource/img/site/parafuso3.png");
+		}
+		
+		&#bottom-right {
+			bottom: 10px;
+			right: 10px;
+			background-image: url("/resource/img/site/parafuso5.png");
+		}
+	}
+	
+	table {
+		thead {
+			th {
+				text-align: left;
+				width: 140px;
+			}
+			
+			th.first {
+				width: 65px;
+			}
+		}
+		
+		tbody {
+			td {
+				div {
+					background-color: #014769;
+					padding: 2px 9px;
+					margin: 1px;
+				}
+			}
+		}
+	}
+}

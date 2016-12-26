@@ -1,0 +1,26 @@
+<label class="spacer">Campanha:</label>
+<select class="field" id="campanhas" name="campanhas">
+	<?=$opcoes?>
+	{loop="campanhas"}
+		<option value="{$value.idcampanha}">{$value.txtnome}</option>
+	{/loop}
+	<option value="0">Todas campanhas</option>
+</select><br />
+
+<label class="spacer">Filtrar:</label>
+<input class="field" id="searcher" name="seacher" type="text" /><br />
+
+<hr class="black" />
+
+<table>
+	<thead>
+		<tr>
+			<th>Nome</th>
+			<th>Observação<th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+		</tr>
+	</tbody>
+</table>

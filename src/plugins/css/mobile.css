@@ -1,0 +1,122 @@
+body {
+	font-family: arial;
+	color: #FFFFFF;
+	font-weight: bolder;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 18px;
+	
+}
+
+a {
+	text-decoration: none;
+}
+
+input[type='text'], input[type='password'] {
+	background-color: #FFFFFF;
+	border: 1px solid #000000;
+	padding: 5px;
+	font-size: 15px;
+}
+
+input[type="submit"], button, input[type="button"] {
+	background-color: #BB0000;
+	margin: 10px;
+	padding: 10px;
+	color: #FFFFFF;
+	font-weight: bolder;
+	border: 1px solid #000000;
+	display: block;
+	font-size: 15px;
+}
+
+#container {
+	border: 1px solid #000000;
+	float: left;
+	display: block;
+	width: 100%;
+}
+
+#container #logo {
+	width: 50%;
+}
+
+#container #content {
+	background-color: #CC0000;
+	padding: 20px 10px;
+}
+
+#container #content label {
+	width: 100%;
+	display: block;
+}
+
+#container #content label input {
+	float: right;
+}
+
+#container #content .button {
+	background-color: #BB0000;
+	margin: 10px;
+	padding: 10px;
+	color: #FFFFFF;
+	font-weight: bolder;
+	border: 1px solid #000000;
+}
+
+#container #content .button:active {
+	background-color: #FF6655;
+}
+
+/* ÁLBUNS (REFERENTE A PARTE DE FOTOS) */
+#foto_grande {
+	background-color: #000000;
+}
+
+#foto_grande div#foto_footer{
+	clear: both; /* Esse carinha é importante ;D */
+	padding: 10px;
+}
+
+#foto_grande div#foto_footer a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#foto_grande div#foto_footer a:active {
+	text-decoration: underline;
+}
+
+#direita {
+}
+
+#direita:active {
+}
+
+#foto_grande img {
+	text-align: center;
+	margin: 0 15px;
+}
+
+#esquerda {
+}
+
+#esquerda:active {
+}
+
+div.as_fotos {
+	background-color: #CAE9A7;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	margin: 5px;
+	float: left;
+}
+
+div.as_fotos img {
+    margin: 5px;
+    max-height: 40px;
+    max-width: 40px;
+}

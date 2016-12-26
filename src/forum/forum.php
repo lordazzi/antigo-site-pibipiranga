@@ -1,0 +1,1 @@
+<?php# AUTHOR: RICARDO AZZI ## CREATED: 08/01/13 #require_once($_SERVER["DOCUMENT_ROOT"]."/forum/plugins/config.php");$page = new Page();?>

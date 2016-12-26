@@ -1,0 +1,1 @@
+<?phpclass Form {	public function __construct($post) {		foreach () {		}	}		public function add() {	}		public function conclusion() {	}}?>

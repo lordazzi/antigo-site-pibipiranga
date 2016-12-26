@@ -1,0 +1,26 @@
+em#nenhuma-opcao-cadastrada {
+	font-size: 12px;
+}
+
+button#adicionar-campo {
+	padding: 4px 10px;
+}
+
+div#alert-campo-ja-existe {
+	width: 280px;
+	margin: 125px auto;
+}
+
+div#alert-campo-ja-existe button {
+	margin: 10px auto 0;
+	width: 100px;
+	display: block;
+}
+
+.deletar {
+	text-align: center;
+}
+
+.deletar img {
+	cursor: pointer;
+}
